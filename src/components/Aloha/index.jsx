@@ -16,12 +16,12 @@ class Aloha extends Component{
     }
 
     remove = () => {
-        const {removeHandler, userId} = this.props;
-        removeHandler(userId);
+        const {removeUser, userId} = this.props;
+        removeUser(userId);
     }
 
     render(){
-        const { name = "React"} = this.props;
+        const {name = "React"} = this.props;
         const {isGreeting} = this.state;
         return (
             <>

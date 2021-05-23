@@ -1,10 +1,10 @@
 import Aloha from "../Aloha";
 
-function AlohaList({users, remove}){
+function AlohaList({users, removeUser}){
   const createUserGreetings = (data) => {
-    return  data.map((user, index) => {
-      return <li key={user.id}>
-        <Aloha name={`${user.firstName} ${user.lastName}`} userId={user.id} removeHandler={ remove }/>
+    return  data.map(({id, firstName, lastName}) => {
+      return <li key={id}>
+        <Aloha name={`${firstName} ${lastName}`} userId={id} removeUser={ removeUser }/>
       </li>
     });
   }

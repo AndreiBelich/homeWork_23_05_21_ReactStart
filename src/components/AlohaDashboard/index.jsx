@@ -8,23 +8,23 @@ class AlohaDashBoard extends Component{
       users: [
         {
           id: 1,
-          firstName: "Napoleon",
-          lastName: "Bonapart"
+          firstName: "Leonardo",
+          lastName: "Di Caprio"
         },
         {
           id: 2,
-          firstName: "Dani",
-          lastName: "Filth"
+          firstName: "John",
+          lastName: "Lenon"
         },
         {
           id: 3,
-          firstName: "Natalia",
-          lastName: "Oreiro"
+          firstName: "Mickle",
+          lastName: "Jordan"
         },
         {
           id: 4,
-          firstName: "Alexander",
-          lastName: "Nevskiy"
+          firstName: "Vin",
+          lastName: "Dizel"
         },
       ]
     } 
@@ -40,7 +40,7 @@ class AlohaDashBoard extends Component{
 
   removeUser = (userId) => {
     const {users} = this.state;
-    this.setUser(users.filter((u) => u.id !== userId));
+    this.setUser(users.filter((user) => user.id !== userId));
   }
 
   render(){
